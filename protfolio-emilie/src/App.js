@@ -12,15 +12,32 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Navigation/>
-      <Header />
-      <Competences />
-      <Contact />
-      <Formations />
-      <Experiences />
-      <Footer />
+      <Navigation />
 
-      
+      {/* Chaque section reçoit un id qui correspond au href de la navbar */}
+      <header id="header">
+        <Header />
+      </header>
+
+      <section id="competences">
+        <Competences />
+      </section>
+
+      <section id="experiences">
+        <Experiences />
+      </section>
+
+      <section id="formation">
+        <Formations />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

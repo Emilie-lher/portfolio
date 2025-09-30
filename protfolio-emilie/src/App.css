@@ -1,34 +1,146 @@
+/* Reset et base */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
   margin: 0;
-  background: #f9f9f9;
-  color: #333;
+  background: #eae4e0; /* fond beige rosé clair */
+  color: #2f2f2f; /* texte gris anthracite */
+  line-height: 1.6;
 }
 
+/* Header principal */
 header {
-  background: #c8b9b9;
-  color: rgb(129, 74, 74);
+  background: #cabbbb;
+  color: #5a503c;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 1rem;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Sections */
 section {
-  background: white;
+  background: #ffffff;
   margin: 2rem auto;
-  padding: 1.5rem;
+  padding: 2rem;
   max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Titres de section */
 h2 {
-  color: #4d5a68;
+  color: #814a4a; /* accent brun rosé */
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #eae4e0;
+  padding-bottom: 0.5rem;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #333;
-  color: white;
-  margin-top: 2rem;
+  background: #cabbbb;
+  color: #ffffff;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d8c4c0; /* beige rosé */
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Logo à gauche */
+.navbar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5a3c3c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Liens de navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2f2f2f;
+  font-weight: 600;
+  transition: color 0.3s ease, background 0.3s ease;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+  background: #814a4a; /* accent brun rosé */
+}
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.experience-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.experience-card h3 {
+  color: #814a4a;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card p {
+  color: #2f2f2f;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: #cabbbb;
+  color: #5a503c;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
