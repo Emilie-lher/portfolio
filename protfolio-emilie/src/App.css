@@ -6,8 +6,8 @@ body {
 }
 
 header {
-  background: #4a90e2;
-  color: white;
+  background: #c8b9b9;
+  color: rgb(129, 74, 74);
   text-align: center;
   padding: 2rem;
 }
@@ -22,7 +22,7 @@ section {
 }
 
 h2 {
-  color: #4a90e2;
+  color: #4d5a68;
 }
 
 footer {
