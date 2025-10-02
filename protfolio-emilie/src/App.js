@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import Profil from "./components/Profil";
 import Navigation from "./components/Navigation";
 import Competences from "./components/Competences";
 import Contact from "./components/Contact";
@@ -18,7 +19,9 @@ function App() {
       <header id="header">
         <Header />
       </header>
-
+ <section id="Profil">
+        <Profil />
+      </section>
       <section id="competences">
         <Competences />
       </section>
