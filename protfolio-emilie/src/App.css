@@ -144,3 +144,58 @@ footer {
   font-size: 0.8rem;
   font-weight: 600;
 }
+
+/* Section Compétences */
+#competences {
+  margin: 2rem auto;
+  padding: 3rem;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+#competences h2 {
+  color: #814a4a;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.competence-section {
+  margin-bottom: 2.5rem;
+}
+
+.competence-section h3 {
+  color: #5a3c3c;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #cabbbb;
+  padding-left: 0.6rem;
+}
+
+/* Grille responsive */
+.competence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+/* Chaque compétence en cube */
+.competence-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #5a503c;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  cursor: default;
+}
+
+.competence-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  background: #f7f2f0; /* léger changement de couleur */
+}
