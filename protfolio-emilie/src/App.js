@@ -32,7 +32,11 @@ function App() {
       </section>
 
       <section id="contact">
-        <Contact />
+       
+    <div>
+      <Contact />
+    </div>
+  
       </section>
 
       <footer>

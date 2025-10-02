@@ -17,6 +17,7 @@ const experiences = [
     denom: "Développeur Web", 
     title: "Stage Association (7 semaines)", 
     desc: "Créer un site pour gérer les inscriptions d’artisans. J'ai pu concevoir un site fonctionnel et validé par le client. Pour cela j'ai conçu le design et défini les fonctionnalités, développé et mis en ligne le site. Le site est opérationnel et utilisé par les artisans pour s’inscrire.  Cela m'a appris que le retour des utilisateurs était important pour réaménager le site au besoin.", 
+    site: "https://www.tregastelbourg.fr/",
     tags: ["SQL", "MariaDB", "CodeIgniter 3"] 
   },
    { 
@@ -54,6 +55,13 @@ function Experiences() {
             <h2>{exp.denom}</h2>
              <h3>{exp.title}</h3>
             <p>{exp.desc}</p>
+            {exp.site && (
+              <p>
+                <a href={exp.site} target="_blank" rel="noopener noreferrer">
+                  {exp.site}
+                </a>
+              </p>
+            )}
             <div className="tags">
               {exp.tags.map((tag, i) => (
                 <span className="tag" key={i}>{tag}</span>
