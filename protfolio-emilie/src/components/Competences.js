@@ -15,7 +15,7 @@ function Competences() {
   ];
 
   return (
-    <section id="competences">
+    <section>
       <h2>Compétences</h2>
 
       {categories.map((cat) => (

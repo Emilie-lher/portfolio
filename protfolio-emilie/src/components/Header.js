@@ -1,5 +1,7 @@
 import React from "react";
-
+import profilePic from "../assets/attestation_secnumacademie-1.png";
+import bac from "../assets/Bac Emilie-1.png";
+import pix from "../assets/attestation-pix-20210204(1)-1.png";
 
 function Header() {
   return (
@@ -21,13 +23,13 @@ function Header() {
       {/* Images flottantes positionnées */}
       <div className="floating-images">
         <div className="cert-image cert-1">
-          <img src="/images/cert1.jpg" alt="Certification 1" />
+          <img src={profilePic} alt="attestation_secnumacademie" />
         </div>
         <div className="cert-image cert-2">
-          <img src="/images/cert2.jpg" alt="Certification 2" />
+          <img src={bac} alt="bac 2" />
         </div>
         <div className="cert-image cert-3">
-          <img src="/images/cert3.jpg" alt="Certification 3" />
+          <img src={pix} alt="pix" />
         </div>
         <div className="cert-image cert-4">
           <img src="/images/book1.jpg" alt="Document 1" />
