@@ -617,3 +617,83 @@ h2 {
   z-index: 2; /* passe devant quand zoomé */
 }
 
+/* ===== Section Formations (version élargie) ===== */
+.formations-section {
+  position: relative;
+  padding: 4rem 3rem; /* 🔹 plus de padding horizontal */
+  max-width: 1100px;  /* 🔹 élargit la section */
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.formations-section h2 {
+  text-align: center;
+  color: #814a4a;
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 3rem; /* un peu plus d'espace à gauche pour la ligne */
+  border-left: 3px solid #cabbbb;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  background-color: #814a4a;
+  border: 3px solid #f7f2f0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #fff;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  color: #5a3c3c;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.timeline-item p {
+  margin: 0.4rem 0 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.timeline-item:hover {
+  transform: translateX(8px);
+  transition: transform 0.3s ease;
+}
+
+/* ✅ Responsive : ajuste la largeur selon l’écran */
+@media (max-width: 992px) {
+  .formations-section {
+    max-width: 90%;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .formations-section {
+    max-width: 95%;
+    padding: 2rem 1.5rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+}

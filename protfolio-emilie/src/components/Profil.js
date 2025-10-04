@@ -35,7 +35,7 @@ function Profil() {
               <li>📞 07 69 16 34 30</li>
               <li>📧 <a href="mailto:emilielher@laposte.net">emilielher@laposte.net</a></li>
               <li>🔗 <a href="https://www.linkedin.com/in/emilie-lher-5855a3226/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li>📍 22730 Trégastel</li>
+              <li>📍 29200 Brest</li>
               <li>🚗 Permis B (voiture)</li>
             </ul>
           </div>
@@ -53,7 +53,7 @@ function Profil() {
           <div className="profil-hobbies">
             <h3>Loisirs</h3>
             <div className="hobby-tags">
-              <span className="tag">🎶 Chant choral</span>
+              <span className="tag">🎶 Choral</span>
               <span className="tag">🎨 Dessin</span>
               <span className="tag">✂️ Couture</span>
             </div>
