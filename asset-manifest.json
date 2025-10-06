@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.0f0bb894.css",
+    "main.js": "/portfolio/static/js/main.546f8950.js",
+    "static/js/453.84c8554a.chunk.js": "/portfolio/static/js/453.84c8554a.chunk.js",
+    "static/media/marché.png": "/portfolio/static/media/marché.a39034c9367bbb865833.png",
+    "static/media/Bac Emilie-1.png": "/portfolio/static/media/Bac Emilie-1.a8ba560692ca25b20ce0.png",
+    "static/media/attestation_secnumacademie-1.png": "/portfolio/static/media/attestation_secnumacademie-1.f891011878bd59af2d15.png",
+    "static/media/osm.png": "/portfolio/static/media/osm.381bf4ecc0f520e28024.png",
+    "static/media/photocv.jpg": "/portfolio/static/media/photocv.342c383c973d713e231f.jpg",
+    "static/media/attestation-pix-20210204(1)-1.png": "/portfolio/static/media/attestation-pix-20210204(1)-1.f9ac6d8f0db093dc6fff.png",
+    "static/media/accueil.PNG": "/portfolio/static/media/accueil.06f0cb0a01114d19e15c.PNG",
+    "static/media/accueil.JPG": "/portfolio/static/media/accueil.9048492a8a77ec24439f.JPG",
+    "static/media/userstory.JPG": "/portfolio/static/media/userstory.b00d597a5454cd7e45aa.JPG",
+    "index.html": "/portfolio/index.html",
+    "main.0f0bb894.css.map": "/portfolio/static/css/main.0f0bb894.css.map",
+    "main.546f8950.js.map": "/portfolio/static/js/main.546f8950.js.map",
+    "453.84c8554a.chunk.js.map": "/portfolio/static/js/453.84c8554a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f0bb894.css",
+    "static/js/main.546f8950.js"
+  ]
+}
