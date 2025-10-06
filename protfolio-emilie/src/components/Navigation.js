@@ -9,6 +9,7 @@ const Navigation = () => {
         <li><a href="#Profil">Profil</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#projetchrono">Projet Chrono</a></li>
         <li><a href="#formation">Formation</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>

@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Formations from "./components/Formation";
 import Experiences from "./components/Experiences";
 import Footer from "./components/Footer";
+import ProjetChrono from "./components/ProjetChrono";
+
 
 import "./App.css";
 
@@ -29,7 +31,9 @@ function App() {
       <section id="experiences">
         <Experiences />
       </section>
-
+      <section id="projetchrono">
+        <ProjetChrono />
+      </section>
       <section id="formation">
         <Formations />
       </section>
