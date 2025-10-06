@@ -16,13 +16,13 @@ function Profil() {
         {/* Colonne droite : texte + infos */}
         <div className="profil-content">
           <p className="profil-intro">
-            Je suis quelqu’un d’appliquée, d’organisée et rigoureuse. J'ai pu développer mes compétences en travail d'équipe
-             Lors de mes différents stages, emplois d’été et bénévolat.
+            Je suis une personne appliquée, organisée et rigoureuse. J'ai pu développer mes compétences en travail d'équipe
+             , lors de mes différents stages, emplois d’été et bénévolat.
               <br></br>
            Mes stages en
              entreprise m'ont permis de mettre en pratique mes compétences techniques et de développer mes capacités
               d'adaptation et de communication avec des collègues et d'approfondir mes connaissances dans les outils de gestion 
-              Surtout lié à mon alternance GitLab. 
+              Surtout liées à mon alternance GitLab. 
               <br></br>
               Cependant, mon engagement le plus significatif est mon rôle de bénévole dans 
               une association locale. Mon travail consiste à
@@ -53,7 +53,7 @@ function Profil() {
           <div className="profil-hobbies">
             <h3>Loisirs</h3>
             <div className="hobby-tags">
-              <span className="tag">🎶 Choral</span>
+              <span className="tag">🎶 Chorale</span>
               <span className="tag">🎨 Dessin</span>
               <span className="tag">✂️ Couture</span>
             </div>

@@ -445,9 +445,16 @@ h2 {
   height: 100%;
   top: 0;
   left: 0;
-  pointer-events: none;
   z-index: 5;
+  pointer-events: none; /* on garde ceci */
 }
+
+/* ✅ réactive les clics seulement sur les images */
+.cert-image {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 
 .cert-image {
   position: absolute;
@@ -636,19 +643,19 @@ h2 {
   position: relative;
 }
 
-.timeline {
+.formations-section .formations-timeline {
   position: relative;
-  padding-left: 3rem; /* un peu plus d'espace à gauche pour la ligne */
+  padding-left: 3rem;
   border-left: 3px solid #cabbbb;
 }
 
-.timeline-item {
+.formations-section .formations-item {
   position: relative;
   margin-bottom: 2.5rem;
   padding-left: 2rem;
 }
 
-.timeline-item::before {
+.formations-section .formations-item::before {
   content: "";
   position: absolute;
   left: -13px;
@@ -660,6 +667,7 @@ h2 {
   border-radius: 50%;
   box-shadow: 0 0 0 4px #fff;
 }
+
 
 .timeline-item h3 {
   margin: 0;
@@ -695,5 +703,194 @@ h2 {
 
   .timeline {
     padding-left: 1.5rem;
+  }
+}
+
+/* header */
+/* === POPUP IMAGE === */
+/* === POPUP IMAGE (version plus petite et élégante) === */
+.image-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(3px); /* effet flou subtil */
+}
+
+.popup-content {
+  position: relative;
+  width: 60%;       /* ✅ réduit la largeur globale */
+  max-width: 700px; /* limite la taille max */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+.popup-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  color: #333;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: background 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #fff;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0.5; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* projetChrono */
+/* === SECTION PROJET CHRONOLOGIQUE === */
+.projet-chrono {
+  background: #f9f5f3;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projet-chrono h2 {
+  font-size: 2rem;
+  color: #814a4a;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* === Ligne principale horizontale === */
+.projet-chrono .timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.5rem; /* 🔹 espace réduit entre les étapes */
+  padding-left: 14rem;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #cabbbb transparent;
+}
+
+.projet-chrono .timeline::-webkit-scrollbar {
+  height: 6px;
+}
+
+.projet-chrono .timeline::-webkit-scrollbar-thumb {
+  background: #cabbbb;
+  border-radius: 4px;
+}
+
+/* === Chaque étape === */
+.projet-chrono .timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 220px; /* 🔹 taille plus compacte */
+  flex-shrink: 0;
+}
+
+/* === Carte contenant texte + image === */
+.projet-chrono .timeline-content {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-chrono .timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* === Image optionnelle === */
+.projet-chrono .timeline-img {
+  width: 100%;
+  height: 120px; /* 🔹 un peu plus petite */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+/* === Texte === */
+.projet-chrono .timeline-text h3 {
+  color: #5a3c3c;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.projet-chrono .timeline-text p {
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* === Ligne/flèche entre les étapes === */
+.projet-chrono .timeline-line {
+  color: #814a4a;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projet-chrono .timeline-line svg {
+  animation: arrowMove 1.2s infinite ease-in-out;
+  width: 24px; /* 🔹 flèche plus petite */
+  height: 24px;
+}
+
+@keyframes arrowMove {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+  100% { transform: translateX(0); }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .projet-chrono .timeline {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projet-chrono .timeline-item {
+    min-width: 200px;
+  }
+
+  .projet-chrono .timeline-content {
+    max-width: 200px;
   }
 }
